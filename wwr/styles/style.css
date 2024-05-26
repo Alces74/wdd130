@@ -1,12 +1,18 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 /* General resets and body styles */
 body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Use Roboto for body text */
 }
 
+/* General resets and body styles */
 body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +21,12 @@ body {
     width: 100%;
     background-color: #f0f0f0; /* Light gray background for the body */
 }
+
+/* Reset margin for h2 */
+h2 {
+    margin: 0; /* Remove default margin */
+}
+
 
 /* Main container styles */
 #content {
@@ -39,6 +51,7 @@ header nav a {
     margin-left: 20px;
     text-decoration: none; /* Remove underline from nav links */
     color: #fff; /* White text color for nav links */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for nav links */
 }
 
 header nav a:hover {
@@ -85,12 +98,14 @@ header nav a:hover {
     font-size: 2.5em;
     margin-bottom: 10px;
     color: #333; /* Dark gray color for home title */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for home title */
 }
 
 #hero-msg h4 {
     font-size: 1.5em;
     margin-bottom: 20px;
     color: #666; /* Medium gray color for h4 */
+    font-family: 'Roboto', sans-serif; /* Use Roboto for h4 */
 }
 
 .button-box .book, .button-box .join {
@@ -99,6 +114,7 @@ header nav a:hover {
     color: white; /* White text color for book and join buttons */
     text-decoration: none; /* Remove underline from book and join buttons */
     border-radius: 5px;
+    font-family: 'Lobster', cursive; /* Use Lobster for book and join buttons */
 }
 
 .button-box .book:hover, .button-box .join:hover {
@@ -150,10 +166,12 @@ header nav a:hover {
 
 .msg h2 {
     color: #333; /* Dark gray color for .msg h2 */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for .msg h2 */
 }
 
 .msg p {
     color: #666; /* Medium gray color for .msg p */
+    font-family: 'Roboto', sans-serif; /* Use Roboto for .msg p */
 }
 
 /* Footer styles */
@@ -164,6 +182,7 @@ footer {
     background-color: #333; /* Dark background for the footer */
     text-align: center;
     color: #fff; /* White text color for footer */
+    font-family: 'Roboto', sans-serif; /* Use Roboto for footer text */
 }
 
 footer p, footer a {
@@ -178,4 +197,72 @@ footer a:hover {
 
 footer .social a {
     margin: 0 10px;
+}
+
+/* Padding */
+#logo_link {
+    padding-top: 5px; /* Add padding to the top of the logo link */
+}
+
+nav a {
+    padding: 35px; /* Add padding to all sides of navigation links */
+}
+
+.book, .join {
+    padding: 15px 30px; /* Add padding to book and join buttons */
+}
+
+.icon {
+    padding-top: 10px; /* Add padding to the top of icons */
+}
+
+.msg {
+    padding: 35px; /* Add padding to message section */
+}
+
+.msg p {
+    padding-bottom: 15px; /* Add padding to the bottom of paragraph in message section */
+}
+
+footer {
+    padding: 25px 50px; /* Add padding to footer */
+}
+
+footer .social img {
+    padding-top: 15px; /* Add padding to the top of social media icons in footer */
+}
+
+/* Margin */
+.home-title {
+    margin-top: 10px; /* Add margin to the top of home title */
+}
+
+.book, .join {
+    margin-top: 50px; /* Add margin to book and join buttons */
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0; /* Add margin to cards */
+}
+
+footer {
+    margin-top: 200px; /* Add margin to the top of footer */
+}
+
+/* Border */
+.book, .join {
+    border-radius: 5px; /* Add border radius to book and join buttons */
+}
+
+.card-img {
+    border: 10px solid #000; /* Add border to card images */
+}
+
+/* Box-sizing */
+main section img {
+    box-sizing: border-box; /* Include border in the size of section images */
+}
+
+.mountains {
+    border: 10px solid #000; /* Add border to the mountains image */
 }
