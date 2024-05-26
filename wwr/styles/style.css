@@ -1,0 +1,181 @@
+/* General resets and body styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0; /* Light gray background for the body */
+}
+
+/* Main container styles */
+#content {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    padding: 20px;
+    background-color: #333; /* Dark background for the header */
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none; /* Remove underline from nav links */
+    color: #fff; /* White text color for nav links */
+}
+
+header nav a:hover {
+    background-color: #555; /* Darker gray background on hover for nav links */
+    color: #fff; /* Ensure text color remains white on hover */
+}
+
+#logo_link .logo {
+    height: 50px;
+    width: 80px; /* Set width of the logo to 80px */
+}
+
+/* Hero section styles */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 20px 0;
+}
+
+#hero-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-img {
+    width: 100%; /* Responsive width for hero image */
+    height: auto;
+}
+
+#hero-msg {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero-msg .home-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333; /* Dark gray color for home title */
+}
+
+#hero-msg h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #666; /* Medium gray color for h4 */
+}
+
+.button-box .book, .button-box .join {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue background for book and join buttons */
+    color: white; /* White text color for book and join buttons */
+    text-decoration: none; /* Remove underline from book and join buttons */
+    border-radius: 5px;
+}
+
+.button-box .book:hover, .button-box .join:hover {
+    background-color: #0056b3; /* Darker blue background on hover for book and join buttons */
+    color: white; /* Ensure text color remains white on hover */
+}
+
+/* Main content grid styles */
+.home-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1600px;
+    margin: 20px 0;
+}
+
+.home-grid section {
+    flex: 1 1 calc(33% - 40px);
+    margin: 10px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-grid .card-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.home-grid .icon {
+    width: 80px; /* Set width of the card icons to 80px */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#background {
+    background-color: #e0e0e0; /* Light gray background for #background */
+}
+
+.msg {
+    background-color: #fafafa; /* Very light gray background for .msg */
+}
+
+.msg h2 {
+    color: #333; /* Dark gray color for .msg h2 */
+}
+
+.msg p {
+    color: #666; /* Medium gray color for .msg p */
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    max-width: 1600px;
+    padding: 20px;
+    background-color: #333; /* Dark background for the footer */
+    text-align: center;
+    color: #fff; /* White text color for footer */
+}
+
+footer p, footer a {
+    margin: 5px 0;
+    color: #fff; /* White text color for footer links and text */
+    text-decoration: none; /* Remove underline from footer links */
+}
+
+footer a:hover {
+    color: #ddd; /* Light gray color on hover for footer links */
+}
+
+footer .social a {
+    margin: 0 10px;
+}
